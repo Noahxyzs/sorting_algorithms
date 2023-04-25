@@ -13,14 +13,14 @@ void swap(int *a, int *b)
 }
 
 /**
- * lomuto-partition - partition
+ * lomuto_partition - lomuto_partition
  * @arr: array
  * @first: first element
  * @last: last element
  * @size: size
  * Return: i
  */
-int lomuto-partition(int *arr, int first, int last, size_t size)
+int lomuto_partition(int *arr, int first, int last, size_t size)
 {
 	int pivot = arr[last];
 	int i = first;
@@ -56,7 +56,7 @@ void quickSort(int *arr, int first, int last, size_t size)
 
 	if (first < last)
 	{
-		pivot = partition(arr, first, last, size);
+		pivot = lomuto_partition(arr, first, last, size);
 		quickSort(arr, first, pivot - 1, size);
 		quickSort(arr, pivot + 1, last, size);
 	}
