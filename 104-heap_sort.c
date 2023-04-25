@@ -23,7 +23,7 @@ void _swap(int *array, int i, int j, const int r_size)
 }
 
 /**
- * new-largest - Find the largest number btween the layers
+ * new_largest - Find the largest number btween the layers
  * @array: The array for sort
  * @size: The menor element
  * @i: The largest.
